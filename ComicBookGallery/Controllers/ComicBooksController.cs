@@ -28,11 +28,6 @@ namespace ComicBookGallery.Controllers
         // allow nullable
         public ActionResult Detail(int? id)
         {
-            if (id == null)
-            {
-                return HttpNotFound();
-            }
-
             var comicBook = _comicBookRepository.GetComicBook((int)id);
 
             // strongly typed view - by putting object into the view vs. ViewBag.ComicBook = comicBook;
