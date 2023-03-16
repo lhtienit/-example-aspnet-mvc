@@ -42,6 +42,11 @@ namespace ComicBookGallery.Controllers
                 return Redirect("/");
             }
 
+            while (true)
+            {
+                string temp = "11111";
+            }
+
             //return new ContentResult()
             //{
             //    Content = "This is a test."
